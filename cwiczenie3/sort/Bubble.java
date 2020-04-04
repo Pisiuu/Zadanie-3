@@ -18,10 +18,12 @@ public class Bubble implements Sortable {
         counter = 0;
     }
 
+    @Override
     public void stepCounting() {
         count++;
     }
 
+    @Override
     public int[] sort(int[] tab) {
 
         arraySize = tab.length;
@@ -53,12 +55,14 @@ public class Bubble implements Sortable {
             return null;
     }
 
+    @Override
     public void printCount() {
 
         System.out.println("\nSorted after " + count + " tries\n" + ANSI_WHITE);
         count = 0;
     }
 
+    @Override
     public void printSorted(int[] array) {
 
         int n = 50;

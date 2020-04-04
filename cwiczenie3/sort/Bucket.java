@@ -22,6 +22,7 @@ public class Bucket implements Sortable {
         }
     }
 
+    @Override
     public int[] sort(int[] array) {
 
         counter = 0;
@@ -54,17 +55,20 @@ public class Bucket implements Sortable {
         return null;
     }
 
+    @Override
     public void stepCounting()  {
 
         count++;
     }
 
+    @Override
     public void printCount() {
 
         System.out.println("\nSorted after " + count + " tries\n" + ANSI_WHITE);
         count = 0;
     }
 
+    @Override
     public void printSorted(int[] array) {
 
         int n = 50;
